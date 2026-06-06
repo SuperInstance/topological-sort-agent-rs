@@ -1,0 +1,20 @@
+[package]
+name = "topological-sort-agent"
+version = "0.1.0"
+edition = "2021"
+description = "Advanced topological sorting with parallel, priority-aware, and incremental algorithms"
+license = "MIT"
+repository = "https://github.com/SuperInstance/topological-sort-agent-rs"
+keywords = ["topological-sort", "dag", "graph", "parallel", "incremental"]
+categories = ["algorithms", "data-structures"]
+
+[dependencies]
+rayon = "1.10"
+
+[dev-dependencies]
+criterion = "0.5"
+
+
+[[bench]]
+name = "topo_bench"
+harness = false
